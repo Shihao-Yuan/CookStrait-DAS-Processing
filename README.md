@@ -52,7 +52,9 @@ Then open notebooks in `notebooks/` and select the kernel **cookstrait-das**.
 
 ## Repository contents
 
-- `notebooks/`: analysis notebooks (project deliverables)
+Work in progress; the notebooks folder currently holds the preprocessing pipeline notebook listed below:
+
+- `notebooks/1-DAS_Preprocessing.ipynb`: walks through the data-prep steps for the Cook Strait DAS experiment, including loading, calibration, and data quality checks. More notebooks may be added as the analysis moves on.
 
 ## Notes
 
