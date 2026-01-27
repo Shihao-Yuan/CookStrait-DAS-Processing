@@ -4,6 +4,15 @@ DAS processing workflows and example datasets from the Cook Strait experiment, i
 
 ## Getting started
 
+### Clone the repository
+
+Grab a local copy:
+
+```bash
+git clone https://github.com/Shihao-Yuan/CookStrait-DAS-Processing.git
+cd CookStrait-DAS-Processing
+```
+
 ### Prerequisites
 
 - **Conda** (Anaconda/Miniconda)
@@ -51,5 +60,5 @@ Then open notebooks in `notebooks/` and select the kernel **cookstrait-das**.
 
 ## References
 
-- DASCore documentation: `https://dascore.org/`
+- [DASCore documentation](https://dascore.org/)
 - Chambers, D., Jin, G., Tourei, A., Issah, A.H.S., Lellouch, A., Martin, E.R., Zhu, D., Girard, A.J., Yuan, S., Cullison, T. and Snyder, T., 2024. Dascore: A python library for distributed fiber optic sensing. *Seismica*, 3(2), pp.10-26443.
