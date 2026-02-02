@@ -13,6 +13,41 @@ git clone https://github.com/Shihao-Yuan/CookStrait-DAS-Processing.git
 cd CookStrait-DAS-Processing
 ```
 
+### Install Miniconda (Linux)
+
+If you don't already have `conda`, install **Miniconda**:
+
+```bash
+mkdir -p ~/miniconda3
+curl -fsSL -o ~/miniconda3/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -f ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init
+```
+
+Restart your shell, then verify:
+
+```bash
+conda --version
+```
+
+### Install Miniconda (Windows)
+
+If you don't already have `conda`, install **Miniconda**:
+
+- Download and run the Miniconda installer from `https://docs.conda.io/en/latest/miniconda.html`
+- Open **Anaconda Prompt (miniconda3)** (or **Miniconda Prompt**), then verify:
+
+```bat
+conda --version
+```
+
+Optional (PowerShell, via `winget`):
+
+```powershell
+winget install -e --id Anaconda.Miniconda3
+```
+
 ### Prerequisites
 
 - **Conda** (Anaconda/Miniconda)
