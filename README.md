@@ -13,6 +13,16 @@ git clone https://github.com/Shihao-Yuan/CookStrait-DAS-Processing.git
 cd CookStrait-DAS-Processing
 ```
 
+### Update the repository
+
+Pull the latest changes regularly:
+
+```bash
+git pull
+```
+
+If you have local edits and `git pull` complains, commit your changes or stash them first.
+
 ### Install Miniconda (Linux)
 
 If you don't already have `conda`, install **Miniconda**:
