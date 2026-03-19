@@ -97,9 +97,10 @@ Then open notebooks in `notebooks/` and select the kernel **cookstrait-das**.
 
 ## Repository contents
 
-Work in progress; the notebooks folder currently holds the preprocessing pipeline notebook listed below:
+Work in progress; the notebooks folder currently contains:
 
-- `notebooks/1-DAS_Preprocessing.ipynb`: walks through the data-prep steps for the Cook Strait DAS experiment, including loading, calibration, and data quality checks. More notebooks may be added as the analysis moves on.
+- `notebooks/1-DAS_Preprocessing.ipynb`: walks through the data-prep steps for the Cook Strait DAS experiment, including loading, calibration, and data quality checks.
+- `notebooks/2-DAS_Examples.ipynb`: demonstrates a range of DAS signal types recorded during the experiment — cable geometry visualisation, GeoNet earthquake catalog queries and waterfall plots of matched events, and ambient noise examples (full-cable overview, traffic/anthropogenic noise with corresponding cable location map).
 
 ## Notes
 
