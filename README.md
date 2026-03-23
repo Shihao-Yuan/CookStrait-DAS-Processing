@@ -105,6 +105,7 @@ Work in progress; the notebooks folder currently contains:
 ## Notes
 
 - Some notebooks may require you to **update local file paths** to point at your DAS data files.
+- If you encounter a `ModuleNotFoundError: No module named '...'`, install the missing package with `pip install <package>` (or `conda install <package>` if you are using a conda environment), then restart the kernel.
 
 ## References
 
