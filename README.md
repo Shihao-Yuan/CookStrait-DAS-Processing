@@ -6,10 +6,13 @@ DAS processing workflows and example datasets from the Cook Strait experiment, i
 
 ### Clone the repository
 
-Grab a local copy:
+Grab a local copy using **HTTPS** (works without SSH setup) or **SSH** if you use SSH keys with GitHub:
 
 ```bash
 git clone https://github.com/Shihao-Yuan/CookStrait-DAS-Processing.git
+# or
+git clone git@github.com:Shihao-Yuan/CookStrait-DAS-Processing.git
+
 cd CookStrait-DAS-Processing
 ```
 
@@ -106,6 +109,36 @@ Work in progress; the notebooks folder currently contains:
 
 - Some notebooks may require you to **update local file paths** to point at your DAS data files.
 - If you encounter a `ModuleNotFoundError: No module named '...'`, install the missing package with `pip install <package>` (or `conda install <package>` if you are using a conda environment), then restart the kernel.
+
+## Running JupyterLab remotely via SSH tunnel
+
+If the DAS data live on a remote server, you can run JupyterLab there and access it in your local browser through an SSH tunnel.
+
+**1. Start JupyterLab on the remote machine** (no browser, fixed port):
+
+```bash
+jupyter lab --no-browser --port=8888
+```
+
+**2. Open an SSH tunnel from your local machine** (replace `user` and `remote.host`):
+
+```bash
+ssh -N -L 8888:localhost:8888 user@remote.host
+```
+
+The `-N` flag keeps the tunnel open without executing a remote command. If port 8888 is already in use on either machine, substitute a different port number (e.g. `8889`) in both commands.
+
+**3. Open JupyterLab in your local browser:**
+
+```
+http://localhost:8888
+```
+
+Copy the token or URL printed by JupyterLab on the remote machine if prompted for authentication.
+
+### Alternative: VS Code Remote SSH (recommended for regular use)
+
+[VS Code Remote SSH](https://code.visualstudio.com/docs/remote/ssh) is easier and more comfortable than manually launching JupyterLab and setting up a browser tunnel every time. It handles the tunnel automatically and gives you a full IDE (file browser, terminal, debugger, and Jupyter notebook support) directly connected to the remote machine.
 
 ## References
 
