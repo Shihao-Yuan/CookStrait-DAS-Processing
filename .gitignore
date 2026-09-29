@@ -1,1 +1,8 @@
 *.raw
+prepared_data
+
+# macOS Finder metadata
+.DS_Store
+
+# Local / generated under notebooks (not for version control)
+notebooks/data-prep/
